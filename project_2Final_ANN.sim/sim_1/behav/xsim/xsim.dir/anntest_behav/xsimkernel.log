@@ -1,0 +1,4 @@
+Running: xsim.dir/anntest_behav/xsimk.exe -simmode gui -wdb anntest_behav.wdb -simrunnum 0 -socket 50625
+Design successfully loaded
+Design Loading Memory Usage: 29836 KB (Peak: 29836 KB)
+Design Loading CPU Usage: 640 ms

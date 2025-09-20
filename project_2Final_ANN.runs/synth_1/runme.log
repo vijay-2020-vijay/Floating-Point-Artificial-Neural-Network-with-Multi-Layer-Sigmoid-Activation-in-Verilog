@@ -1,0 +1,598 @@
+
+*** Running vivado
+    with args -log Finalann.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Finalann.tcl
+
+
+WARNING: Default location for XILINX_HLS not found
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Sep 17 02:16:49 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Finalann.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 388.066 ; gain = 88.430
+Command: read_checkpoint -auto_incremental -incremental D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/utils_1/imports/synth_1/Finalann.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/utils_1/imports/synth_1/Finalann.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Finalann -part xc7a200tisbg484-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200ti'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 5432
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 870.199 ; gain = 472.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'exp_a', assumed default net type 'wire' [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/addsubs.v:35]
+INFO: [Synth 8-11241] undeclared symbol 'exp_b', assumed default net type 'wire' [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/addsubs.v:36]
+INFO: [Synth 8-11241] undeclared symbol 'perform', assumed default net type 'wire' [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/addsubs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'Finalann' [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:10]
+INFO: [Synth 8-6157] synthesizing module 'sign_floating' [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/sign_floating.v:3]
+INFO: [Synth 8-6157] synthesizing module 'special_shifter' [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/special_shifter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'special_shifter' (0#1) [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/special_shifter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'sign_floating' (0#1) [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/sign_floating.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sigmaiodf' [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/sigmaiodf.v:5]
+	Parameter n bound to: 40 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multipli' [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/multipli.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mult_men' [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/multipli.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'mult_men' (0#1) [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/multipli.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'multipli' (0#1) [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/multipli.v:4]
+INFO: [Synth 8-6157] synthesizing module 'div1' [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/div1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Fixed_Point_Divider' [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/div1.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'Fixed_Point_Divider' (0#1) [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/div1.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'div1' (0#1) [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/div1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'addsubs' [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/addsubs.v:3]
+INFO: [Synth 8-6157] synthesizing module 'priority_encoder' [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/addsubs.v:108]
+INFO: [Synth 8-6155] done synthesizing module 'priority_encoder' (0#1) [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/addsubs.v:108]
+INFO: [Synth 8-6155] done synthesizing module 'addsubs' (0#1) [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/addsubs.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sigmaiodf' (0#1) [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/sigmaiodf.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:97]
+INFO: [Synth 8-6155] done synthesizing module 'Finalann' (0#1) [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:10]
+WARNING: [Synth 8-6014] Unused sequential element result1_reg was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/sigmaiodf.v:96]
+WARNING: [Synth 8-6014] Unused sequential element y_load_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[0][0] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[0][1] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[0][2] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[0][3] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[0][4] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[1][0] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[1][1] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[1][2] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[1][3] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[1][4] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[2][0] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[2][1] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[2][2] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[2][3] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[2][4] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[3][0] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[3][1] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[3][2] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[3][3] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[3][4] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[4][0] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[4][1] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[4][2] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[4][3] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element w4_load_reg[4][4] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:150]
+WARNING: [Synth 8-6014] Unused sequential element Final_reg[0][0] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:244]
+WARNING: [Synth 8-6014] Unused sequential element Final_reg[0][2] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:244]
+WARNING: [Synth 8-6014] Unused sequential element Final_reg[0][3] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:244]
+WARNING: [Synth 8-6014] Unused sequential element Final_reg[0][4] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:244]
+WARNING: [Synth 8-6014] Unused sequential element Final_reg[1][1] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:244]
+WARNING: [Synth 8-6014] Unused sequential element Final_reg[1][2] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:244]
+WARNING: [Synth 8-6014] Unused sequential element Final_reg[1][3] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:244]
+WARNING: [Synth 8-6014] Unused sequential element Final_reg[1][4] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:244]
+WARNING: [Synth 8-6014] Unused sequential element Final_reg[2][0] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:244]
+WARNING: [Synth 8-6014] Unused sequential element Final_reg[2][1] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:244]
+WARNING: [Synth 8-6014] Unused sequential element Final_reg[2][2] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:244]
+WARNING: [Synth 8-6014] Unused sequential element Final_reg[2][4] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:244]
+WARNING: [Synth 8-6014] Unused sequential element Final_reg[3][0] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:244]
+WARNING: [Synth 8-6014] Unused sequential element Final_reg[3][2] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:244]
+WARNING: [Synth 8-6014] Unused sequential element Final_reg[3][3] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:244]
+WARNING: [Synth 8-6014] Unused sequential element Final_reg[3][4] was removed.  [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/Finalann.v:244]
+WARNING: [Synth 8-6014] Unused sequential element final_output_reg was removed. 
+WARNING: [Synth 8-7129] Port w4[31] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[30] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[29] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[28] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[27] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[26] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[25] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[24] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[23] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[22] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[21] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[20] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[19] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[18] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[17] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[16] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[15] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[14] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[13] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[12] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[11] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[10] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[9] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[8] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[7] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[6] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[5] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[4] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[3] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[2] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[1] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[0] in module Finalann is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1018.773 ; gain = 620.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1018.773 ; gain = 620.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tisbg484-1L
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tisbg484-1L
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1018.773 ; gain = 620.598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'ns_reg' in module 'sigmaiodf'
+WARNING: [Synth 8-327] inferring latch for variable 'exponent_reg' [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/special_shifter.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'mentissa_reg' [D:/verilog_11/project_2Final_ANN/project_2Final_ANN.srcs/sources_1/new/special_shifter.v:11]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     s00 |                 0000000000000001 |                             1101
+                      s0 |                 0000000000000010 |                             0000
+                      s1 |                 0000000000000100 |                             0001
+                      s2 |                 0000000000001000 |                             0010
+                      s3 |                 0000000000010000 |                             0011
+                      s4 |                 0000000000100000 |                             0100
+                      s5 |                 0000000001000000 |                             0101
+                      s6 |                 0000000010000000 |                             0110
+                      s7 |                 0000000100000000 |                             0111
+                      s8 |                 0000001000000000 |                             1000
+                      s9 |                 0000010000000000 |                             1001
+                     s10 |                 0000100000000000 |                             1010
+                     s11 |                 0001000000000000 |                             1011
+                     s12 |                 0010000000000000 |                             1100
+                     s14 |                 0100000000000000 |                             1110
+                     s15 |                 1000000000000000 |                             1111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ns_reg' using encoding 'one-hot' in module 'sigmaiodf'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1018.773 ; gain = 620.598
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 8     
+	   3 Input   25 Bit       Adders := 23    
+	   2 Input   25 Bit       Adders := 3     
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input   23 Bit       Adders := 120   
+	   4 Input   10 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 8     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 109   
+	                7 Bit    Registers := 5     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	              32x32  Multipliers := 4     
++---RAMs : 
+	              160 Bit	(5 X 32 bit)          RAMs := 8     
+	              128 Bit	(4 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   65 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 6     
+	  16 Input   32 Bit        Muxes := 6     
+	   4 Input   32 Bit        Muxes := 7     
+	  18 Input   32 Bit        Muxes := 8     
+	   2 Input   25 Bit        Muxes := 24    
+	   2 Input   24 Bit        Muxes := 3     
+	   2 Input   23 Bit        Muxes := 129   
+	  16 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 322   
+	   5 Input    8 Bit        Muxes := 12    
+	  16 Input    7 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 8     
+	  18 Input    7 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	  18 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 139   
+	  16 Input    1 Bit        Muxes := 7     
+	  18 Input    1 Bit        Muxes := 110   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP r1/mul, operation Mode is: A*B.
+DSP Report: operator r1/mul is absorbed into DSP r1/mul.
+DSP Report: operator r1/mul is absorbed into DSP r1/mul.
+DSP Report: Generating DSP r1/mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator r1/mul is absorbed into DSP r1/mul.
+DSP Report: operator r1/mul is absorbed into DSP r1/mul.
+DSP Report: Generating DSP p_0_out1_out, operation Mode is: A*B.
+DSP Report: operator p_0_out1_out is absorbed into DSP p_0_out1_out.
+DSP Report: operator p_0_out1_out is absorbed into DSP p_0_out1_out.
+DSP Report: Generating DSP p_0_out1_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_0_out1_out is absorbed into DSP p_0_out1_out.
+DSP Report: operator p_0_out1_out is absorbed into DSP p_0_out1_out.
+DSP Report: Generating DSP p_0_out1_out, operation Mode is: A*B.
+DSP Report: operator p_0_out1_out is absorbed into DSP p_0_out1_out.
+DSP Report: operator p_0_out1_out is absorbed into DSP p_0_out1_out.
+DSP Report: Generating DSP p_0_out1_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_0_out1_out is absorbed into DSP p_0_out1_out.
+DSP Report: operator p_0_out1_out is absorbed into DSP p_0_out1_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+WARNING: [Synth 8-7129] Port w4[31] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[30] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[29] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[28] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[27] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[26] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[25] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[24] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[23] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[22] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[21] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[20] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[19] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[18] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[17] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[16] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[15] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[14] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[13] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[12] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[11] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[10] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[9] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[8] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[7] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[6] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[5] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[4] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[3] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[2] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[1] in module Finalann is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w4[0] in module Finalann is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:12 . Memory (MB): peak = 1450.098 ; gain = 1051.922
+---------------------------------------------------------------------------------
+ Sort Area is  p_0_out1_out_3 : 0 0 : 3101 5754 : Used 1 time 0
+ Sort Area is  p_0_out1_out_3 : 0 1 : 2653 5754 : Used 1 time 0
+ Sort Area is  p_0_out_9 : 0 0 : 3101 5754 : Used 1 time 0
+ Sort Area is  p_0_out_9 : 0 1 : 2653 5754 : Used 1 time 0
+ Sort Area is  p_0_out_b : 0 0 : 3101 5754 : Used 1 time 0
+ Sort Area is  p_0_out_b : 0 1 : 2653 5754 : Used 1 time 0
+ Sort Area is  p_0_out_d : 0 0 : 3101 5754 : Used 1 time 0
+ Sort Area is  p_0_out_d : 0 1 : 2653 5754 : Used 1 time 0
+ Sort Area is  p_0_out1_out_6 : 0 0 : 2634 5119 : Used 1 time 0
+ Sort Area is  p_0_out1_out_6 : 0 1 : 2485 5119 : Used 1 time 0
+ Sort Area is  p_0_out_a : 0 0 : 2634 5119 : Used 1 time 0
+ Sort Area is  p_0_out_a : 0 1 : 2485 5119 : Used 1 time 0
+ Sort Area is  p_0_out_c : 0 0 : 2634 5119 : Used 1 time 0
+ Sort Area is  p_0_out_c : 0 1 : 2485 5119 : Used 1 time 0
+ Sort Area is  p_0_out_e : 0 0 : 2634 5119 : Used 1 time 0
+ Sort Area is  p_0_out_e : 0 1 : 2485 5119 : Used 1 time 0
+ Sort Area is  r1/mul_0 : 0 0 : 3446 4760 : Used 1 time 0
+ Sort Area is  r1/mul_0 : 0 1 : 1314 4760 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------+-----------+----------------------+----------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives     | 
++------------+------------+-----------+----------------------+----------------+
+|Finalann    | x_load_reg | Implied   | 4 x 32               | RAM32M x 6     | 
+|Finalann    | h1_reg     | Implied   | 8 x 32               | RAM16X1S x 32  | 
+|Finalann    | h11_reg    | Implied   | 8 x 32               | RAM16X1D x 32  | 
+|Finalann    | h2_reg     | Implied   | 8 x 32               | RAM32M x 6     | 
+|Finalann    | h22_reg    | Implied   | 8 x 32               | RAM32M x 12    | 
+|Finalann    | h3_reg     | Implied   | 8 x 32               | RAM16X1S x 32  | 
+|Finalann    | h33_reg    | Implied   | 8 x 32               | RAM16X1D x 32  | 
+|Finalann    | h4_reg     | Implied   | 8 x 32               | RAM32M x 6     | 
+|Finalann    | h44_reg    | Implied   | 8 x 32               | RAM32M x 12    | 
++------------+------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mult_men    | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mult_men    | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:13 . Memory (MB): peak = 1450.098 ; gain = 1051.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+------------+-----------+----------------------+----------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives     | 
++------------+------------+-----------+----------------------+----------------+
+|Finalann    | x_load_reg | Implied   | 4 x 32               | RAM32M x 6     | 
+|Finalann    | h1_reg     | Implied   | 8 x 32               | RAM16X1S x 32  | 
+|Finalann    | h11_reg    | Implied   | 8 x 32               | RAM16X1D x 32  | 
+|Finalann    | h2_reg     | Implied   | 8 x 32               | RAM32M x 6     | 
+|Finalann    | h22_reg    | Implied   | 8 x 32               | RAM32M x 12    | 
+|Finalann    | h3_reg     | Implied   | 8 x 32               | RAM16X1S x 32  | 
+|Finalann    | h33_reg    | Implied   | 8 x 32               | RAM16X1D x 32  | 
+|Finalann    | h4_reg     | Implied   | 8 x 32               | RAM32M x 6     | 
+|Finalann    | h44_reg    | Implied   | 8 x 32               | RAM32M x 12    | 
++------------+------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:01:16 . Memory (MB): peak = 1450.098 ; gain = 1051.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:20 . Memory (MB): peak = 1461.340 ; gain = 1063.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:20 . Memory (MB): peak = 1461.340 ; gain = 1063.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:21 . Memory (MB): peak = 1461.340 ; gain = 1063.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:21 . Memory (MB): peak = 1461.340 ; gain = 1063.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:21 . Memory (MB): peak = 1461.340 ; gain = 1063.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:21 . Memory (MB): peak = 1461.340 ; gain = 1063.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mult_men    | A*B'         | 24     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|mult_men    | PCIN>>17+A*B | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | PCIN>>17+A*B | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | PCIN>>17+A*B | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | PCIN>>17+A*B | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Finalann    | PCIN>>17+A*B | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   762|
+|3     |DSP48E1  |    14|
+|4     |LUT1     |  1598|
+|5     |LUT2     |   547|
+|6     |LUT3     |   720|
+|7     |LUT4     |   958|
+|8     |LUT5     |  1064|
+|9     |LUT6     |  4077|
+|10    |MUXF7    |    96|
+|11    |RAM16X1D |    64|
+|12    |RAM16X1S |    64|
+|13    |RAM32M   |    37|
+|14    |RAM32X1D |     6|
+|15    |FDRE     |  3554|
+|16    |FDSE     |    32|
+|17    |LD       |    92|
+|18    |LDC      |     8|
+|19    |LDP      |    20|
+|20    |IBUF     |   130|
+|21    |OBUF     |     1|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+--------------------+------+
+|      |Instance |Module              |Cells |
++------+---------+--------------------+------+
+|1     |top      |                    | 13845|
+|2     |  sf0    |sign_floating__1    |  1221|
+|3     |    sss  |special_shifter_2   |  1221|
+|4     |  sf1    |sign_floating__2    |  1221|
+|5     |    sss  |special_shifter_1   |  1221|
+|6     |  sf2    |sign_floating__3    |  1221|
+|7     |    sss  |special_shifter_0   |  1221|
+|8     |  sf3    |sign_floating       |  1221|
+|9     |    sss  |special_shifter     |  1221|
+|10    |  sfg    |sigmaiodf           |  3157|
+|11    |    A1   |addsubs             |   388|
+|12    |      pe |priority_encoder    |   388|
+|13    |    D1   |div1                |  1979|
+|14    |      D1 |Fixed_Point_Divider |  1979|
+|15    |    M1   |multipli            |    81|
+|16    |      r1 |mult_men            |    81|
++------+---------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:21 . Memory (MB): peak = 1461.340 ; gain = 1063.164
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 112 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:08 ; elapsed = 00:01:21 . Memory (MB): peak = 1461.340 ; gain = 1063.164
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:21 . Memory (MB): peak = 1461.340 ; gain = 1063.164
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 1482.141 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1163 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1603.395 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 291 instances were transformed.
+  LD => LDCE: 92 instances
+  LDC => LDCE: 8 instances
+  LDP => LDPE: 20 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 64 instances
+  RAM16X1S => RAM32X1S (RAMS32): 64 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 37 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 6 instances
+
+Synth Design complete | Checksum: 1d4f5f9
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 117 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:29 . Memory (MB): peak = 1603.395 ; gain = 1211.434
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.210 . Memory (MB): peak = 1603.395 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/verilog_11/project_2Final_ANN/project_2Final_ANN.runs/synth_1/Finalann.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Finalann_utilization_synth.rpt -pb Finalann_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 17 02:18:37 2025...

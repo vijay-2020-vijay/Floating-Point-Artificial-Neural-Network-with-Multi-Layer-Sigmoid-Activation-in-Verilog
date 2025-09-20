@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"anntest_func_synth.v" \
+"../../../../../project_2Final_ANN.srcs/sim_1/new/anntest.v" \
+
+# Do not sort compile order
+nosort

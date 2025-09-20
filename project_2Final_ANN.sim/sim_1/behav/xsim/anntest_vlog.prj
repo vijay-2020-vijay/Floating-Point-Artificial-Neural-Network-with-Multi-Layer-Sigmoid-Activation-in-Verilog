@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_2Final_ANN.srcs/sources_1/new/Finalann.v" \
+"../../../../project_2Final_ANN.srcs/sources_1/new/addsubs.v" \
+"../../../../project_2Final_ANN.srcs/sources_1/new/div1.v" \
+"../../../../project_2Final_ANN.srcs/sources_1/new/multipli.v" \
+"../../../../project_2Final_ANN.srcs/sources_1/new/sigmaiodf.v" \
+"../../../../project_2Final_ANN.srcs/sources_1/new/sign_floating.v" \
+"../../../../project_2Final_ANN.srcs/sources_1/new/special_shifter.v" \
+"../../../../project_2Final_ANN.srcs/sim_1/new/anntest.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
